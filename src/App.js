@@ -57,9 +57,9 @@ function App() {
   <Route path="/confirmation"  render={(routerProps)=><OrderConfirm {...routerProps} orderCode={id}/>}>
 </Route>
 
-<Route path="/my_orders">
+{/* <Route path="/my_orders">
   <OrderList/>
-</Route>
+</Route> */}
       </Switch>
    
     </div>

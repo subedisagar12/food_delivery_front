@@ -42,7 +42,7 @@ const submit=async(e)=>{
             for(let i=0;i<bagItems.length;i++){
                 axios({
                     method:'post',
-                    url:'http://subedisagar12.pythonanywhere.com/order/order_item/',
+                    url:'https://subedisagar12.pythonanywhere.com/order/order_item/',
                     data:{
                         item:bagItems[i].data.name,
                         qty:bagItems[i].qty,
@@ -55,7 +55,7 @@ const submit=async(e)=>{
 
         await axios({
             method:'post',
-            url:'http://subedisagar12.pythonanywhere.com/order/order/',
+            url:'https://subedisagar12.pythonanywhere.com/order/order/',
             data:{
                 id:props.id,
                 client:info.name,

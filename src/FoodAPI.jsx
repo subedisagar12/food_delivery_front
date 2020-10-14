@@ -9,7 +9,7 @@ export const CategoryProvider=(props)=>{
     const[category,setCategory]=useState()
     useEffect(()=>{
         async function getCategory(){
-            let data=await axios.get("http://subedisagar12.pythonanywhere.com/api/category").catch(e=>console.log(e))
+            let data=await axios.get("https://subedisagar12.pythonanywhere.com/api/category").catch(e=>console.log(e))
             
 
             if (data){
@@ -40,7 +40,7 @@ export const FoodProvider=(props)=>{
     const[food,setFood]=useState()
     useEffect(()=>{
         async function getFood(){
-            let data=await axios.get("http://subedisagar12.pythonanywhere.com/api/food").catch(e=>console.log(e))
+            let data=await axios.get("https://subedisagar12.pythonanywhere.com/api/food").catch(e=>console.log(e))
 
             if(data){
                 setFood(data.data)

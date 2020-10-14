@@ -21,12 +21,12 @@ const Navbar=(props)=>{
       <li className="nav-item active">
         <Link className="nav-link" to="/">Home</Link>
       </li>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link className="nav-link" to="/my_orders">My Orders</Link>
-      </li>
-      <li className="nav-item">
+      </li> */}
+      {/* <li className="nav-item">
         <a className="nav-link" href="#">Pricing</a>
-      </li>
+      </li> */}
 
       <li className="nav-item">
     <Link to="/bag" className="nav-link" href="#"> <i className="fa fa-shopping-bag"></i> <span className="badge badge-secondary">{itemCount}</span> </Link>
